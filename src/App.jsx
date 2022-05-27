@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from "react"
-import db from "./Firebase"
-import Navbar from "./components/Navbar"
-import Body from "./components/Body"
-import { onSnapshot, collection } from "firebase/firestore"
+import React, { useEffect, useState } from 'react';
+import { collection, getFirestore, getDocs } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
+import config from './Firebase';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import BlogPage from './Pages/BlogPage';
+import ExperiencePage from './Pages/ExperiencePage';
 
 export default function App() {
-	const [assets, setAssets] = useState([])
 
-	useEffect(
-		() =>
-			onSnapshot(collection(db, "assets"), (snapshot) =>
-				setAssets(snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id })))
-			),
-		[]
-	)
+	const app = initializeApp(config);
+	const db = getFirestore(app);
+
 
 	return (
 		<>
-			<Navbar />
-			<Body
-				data={assets}
-			/>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/blog' element={<BlogPage />} />
+					<Route path='/experience' element={<ExperiencePage />} />
+				</Routes>
+			</BrowserRouter>
 		</>
 	)
 }
