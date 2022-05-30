@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { collection, getFirestore, getDocs, onSnapshot, doc } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import config from './Firebase';
@@ -22,15 +22,15 @@ export default function App() {
 		[]
 	)
 
-	console.log(data)
+
 
 	return (
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route path='/' element={<HomePage data={data}/>} />
+					<Route path='/' element={<HomePage/>} />
+					<Route path='/experience' element={<ExperiencePage data={data}/>} />
 					<Route path='/blog' element={<BlogPage />} />
-					<Route path='/experience' element={<ExperiencePage />} />
 				</Routes>
 			</BrowserRouter>
 		</>
