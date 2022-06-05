@@ -5,7 +5,7 @@ const BlogPage = () => {
 	return(
 		<>
 			<Navbar />
-			<h1>This page is coming soon so stay tuned!</h1>
+			<h1>This feature is coming soon so stay tuned!</h1>
 		</>
 	)
 }
