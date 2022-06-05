@@ -14,7 +14,7 @@ const ExperienceCard = () => {
 							<div className='flex flex-col font-Raleway pr-10 w-60 md:w-1/3'>
 								<h2 className='text-lg font-bold md:text-2xl'>{data.company}</h2>
 								{data.position.map((position) => (
-									<div className='text-xs border-l-2 pl-3 my-3 border-primary
+									<div key={position.title} className='text-xs border-l-2 pl-3 my-3 border-primary
 													md:text-lg'>
 										<p>{position.title}</p>
 										<p className='italic text-dark'>{position.duration}</p>
