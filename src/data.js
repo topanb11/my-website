@@ -29,6 +29,11 @@ const data = {
 					duration: 'Mar. 2022 - Present',
 					location: 'Calgary, AB'
 				},
+				{
+					title: 'Director of Events',
+					duration: 'May. 2021 - Mar. 2022',
+					location: 'Calgary, AB'
+				},
 			]
 		}
 	]
