@@ -2,7 +2,6 @@ import React from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
-import resume from '../assets/resume.pdf';
 
 function Navbar() {
 	const Links = [
