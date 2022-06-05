@@ -10,9 +10,9 @@ export default function App() {
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route path={process.env.PUBLIC_URL + '/'} element={<HomePage />} />
-					<Route path={process.env.PUBLIC_URL + '/experience'} element={<ExperiencePage />} />
-					<Route path={process.env.PUBLIC_URL + '/blog'} element={<BlogPage />} />
+					<Route path='/' element={<HomePage />} />
+					<Route path='/experience' element={<ExperiencePage />} />
+					<Route path='/blog' element={<BlogPage />} />
 				</Routes>
 			</BrowserRouter>
 		</>

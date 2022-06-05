@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import ExperienceCard from '../components/ExperienceCard';
 
 const ExperiencePage = () => {
-
 	return (
 		<>
 			<Navbar />

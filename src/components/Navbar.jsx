@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function Navbar() {
@@ -31,7 +32,7 @@ function Navbar() {
 						Links.map((link) => (
 							<li key={link.name} className='pr-6 my-7 md:px-10 text-2xl font-semibold duration-500
 															hover:text-black'>
-								<a href={link.link} target={link.target} >{link.name}</a>
+								<Link to={link.link} target={link.target} >{link.name}</Link>
 							</li>
 						))
 					}

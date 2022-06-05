@@ -26,8 +26,7 @@ const HomePage = () => {
 							Software Engineering Student @ University of Calgary
 						</h3>
 						<p>Always looking to learn new things, connect with people and create cool stuff!</p>
-						<div className='flex justify-center justify-evenly mt-5
-									'>
+						<div className='flex justify-center justify-evenly mt-5'>
 							<a href='https://github.com/topanb11' target='_blank'>
 								<GitHubIcon sx={{ color: '#764AF1', fontSize: '60px' }} />
 							</a>
