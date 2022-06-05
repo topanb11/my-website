@@ -10,7 +10,7 @@ const ExperienceCard = () => {
 					data.ExperienceData.map((data) => (
 						<li key={data.order} className='flex flex-row-reverse text-left my-10 
 														justify-center'>
-							<img src={data.imageURL} className='w-28 h-28 md:w-52 md:h-52' />
+							<img src={data.imageURL} className='w-24 h-24 md:w-52 md:h-52' />
 							<div className='flex flex-col font-Raleway pr-10 w-60 md:w-1/3'>
 								<h2 className='text-lg font-bold md:text-2xl'>{data.company}</h2>
 								{data.position.map((position) => (
