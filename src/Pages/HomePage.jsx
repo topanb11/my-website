@@ -28,13 +28,13 @@ const HomePage = () => {
 						<p>Always looking to learn new things, connect with people and create cool stuff!</p>
 						<div className='flex justify-center justify-evenly mt-5'>
 							<a href='https://github.com/topanb11' target='_blank'>
-								<GitHubIcon sx={{ color: '#764AF1', fontSize: '60px' }} />
+								<GitHubIcon sx={{ color: '#5539CC', fontSize: '60px' }} />
 							</a>
 							<a href='https://www.linkedin.com/in/topan-budiman-b84977205/' target='_blank'>
-								<LinkedInIcon sx={{ color: '#764AF1', fontSize: '60px' }} />
+								<LinkedInIcon sx={{ color: '#5539CC', fontSize: '60px' }} />
 							</a>
 							<a href='mailto:topan.budiman@ucalgary.ca' target='_blank'>
-								<EmailIcon sx={{ color: '#764AF1', fontSize: '60px' }} />
+								<EmailIcon sx={{ color: '#5539CC', fontSize: '60px' }} />
 							</a>
 						</div>
 					</div>

@@ -6,10 +6,10 @@ module.exports = {
     extend: {},
   colors: {
     "white": "#F2F2F2",
-    "primary": "#764AF1",
-    "secondary": "#9772FB",
-    "light": "#ac96eb",
-    "dark": "#41209e",
+    "primary": "#5539CC",
+    "secondary": "#8773DB",
+    "light": "#C4BAED",
+    "dark": "#1F144D",
 	"black": "#000"
   },
   fontFamily: {
