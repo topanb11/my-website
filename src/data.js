@@ -8,7 +8,7 @@ const data = {
 			order: 1,
 			position: [
 				{
-					title: 'Land Innovation Intern',
+					title: 'Full-Stack Developer',
 					duration: 'May. 2022 - Aug. 2022',
 					location: 'Calgary, AB'
 				}
