@@ -17,7 +17,7 @@ function Navbar() {
 	return (
 		<>
 			<div className='md:flex md:justify-between items-baseline bg-primary text-white'>
-				<h1 className='text-4xl font-Raleway font-bold pl-6 py-5 text-left bg-primary'>
+				<h1 className='text-4xl font-Raleway font-bold pl-6 py-5 text-left bg-primary z-[10]'>
 					Topan Budiman
 				</h1>
 				<div className='absolute right-4 top-5 cursor-pointer md:hidden'
@@ -25,7 +25,7 @@ function Navbar() {
 				>
 					{open ? <CloseIcon sx={{ fontSize: '40px' }} /> : <MenuIcon sx={{ fontSize: '40px' }} />}
 				</div>
-				<ul className={`absolute pl-7 bg-secondary w-full z-[1]
+				<ul className={`absolute pl-7 bg-secondary w-full z-[-10]
 				md:flex md:z-auto md:static md:flex md:items-center md:w-auto md:bg-primary
 				transition-all duration-500 ease-in rounded-b-xl ${open ? 'top-16' : 'top-[-300px]'}`}>
 					{

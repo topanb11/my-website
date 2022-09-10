@@ -12,7 +12,7 @@ const HomePage = () => {
 				<Navbar />
 				<div className='flex flex-col text-center
 								md:flex-row-reverse md:justify-center md:mt-16'>
-					<div className='mt-6 mx-6'>
+					<div className='mt-6 mx-6 z-[-20]'>
 						<img src='../assets/headshot.jpeg'
 							className='rounded-[3em] shadow-lg md:w-96' />
 					</div>
