@@ -9,11 +9,11 @@ const HomePage = () => {
     <>
       <div className="from-secondary to h-screen">
         <Navbar />
-        {/* <div
+        <div
           className="flex flex-col text-center
-								md:flex-row-reverse md:justify-center md:mt-16"
+								md:flex-row-reverse md:justify-center mt-10 md:mt-16"
         >
-          <div className="mt-6 mx-6 z-[-10]">
+          <div className="mx-6 z-[-10]">
             <img
               src="../assets/headshot.jpeg"
               className="rounded-[3em] shadow-lg md:w-96"
@@ -51,7 +51,7 @@ const HomePage = () => {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
