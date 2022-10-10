@@ -15,7 +15,7 @@ function Navbar() {
 
   const NAVBAR_CONTAINER =
     "flex bg-white text-black font-bold h-20 w-full md:h-24 justify-between pt-3 items-center border-b-2 border-primary shadow-lg";
-  const DROPDOWN_MENU = `absolute md:flex md:static bg-white w-full md:basis-1/3 ${
+  const DROPDOWN_MENU = `absolute md:flex md:static bg-white w-full md:basis-1 ${
     open ? "top-20" : "-top-96"
   } shadow-lg md:shadow-none rounded-lg pb-5 md:mr-10 md:space-x-10`;
   const DROPDOWN_ITEM =
