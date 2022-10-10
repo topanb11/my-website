@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4451c508.css",
-    "main.js": "/static/js/main.fca805c5.js",
+    "main.css": "/static/css/main.39b496f4.css",
+    "main.js": "/static/js/main.0fc4435b.js",
     "static/media/resume.pdf": "/static/media/resume.2556df033e83d2a51552.pdf",
     "static/media/CodeTheChange.png": "/static/media/CodeTheChange.ff3e626edc81ceabf1a6.png",
     "static/media/Ovintiv.png": "/static/media/Ovintiv.84a2b52161ca9daa23a9.png",
     "index.html": "/index.html",
-    "main.4451c508.css.map": "/static/css/main.4451c508.css.map",
-    "main.fca805c5.js.map": "/static/js/main.fca805c5.js.map"
+    "main.39b496f4.css.map": "/static/css/main.39b496f4.css.map",
+    "main.0fc4435b.js.map": "/static/js/main.0fc4435b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4451c508.css",
-    "static/js/main.fca805c5.js"
+    "static/css/main.39b496f4.css",
+    "static/js/main.0fc4435b.js"
   ]
 }
