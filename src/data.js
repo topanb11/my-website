@@ -1,9 +1,11 @@
+import CTC from "./assets/CodeTheChange.png"
+import OVV from "./assets/Ovintiv.png"
+
 const data = {
   ExperienceData: [
     {
       company: "Ovintiv",
-      imageURL:
-        "https://pbs.twimg.com/profile_images/1221057214368165889/xzvuWDwn_400x400.png",
+      imageURL: OVV,
       order: 1,
       position: [
         {
@@ -15,7 +17,7 @@ const data = {
     },
     {
       company: "Code the Change YYC",
-      imageURL: "https://codethechangeyyc.ca/images/_logo.png",
+      imageURL: CTC,
       order: 2,
       position: [
         {
