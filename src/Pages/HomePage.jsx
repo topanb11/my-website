@@ -46,7 +46,7 @@ const HomePage = () => {
               >
                 <LinkedInIcon sx={{ color: "#5539CC", fontSize: "60px" }} />
               </a>
-              <a href="mailto:topan.budiman@ucalgary.ca" target="_blank">
+              <a href="mailto:topanbudiman11@gmail.com" target="_blank">
                 <EmailIcon sx={{ color: "#5539CC", fontSize: "60px" }} />
               </a>
             </div>
