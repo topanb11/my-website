@@ -11,8 +11,8 @@ const ExperienceCard = () => {
             className="flex flex-row-reverse text-left my-10 
 														justify-center"
           >
-            <img src={data.imageURL} className="w-16 h-16 md:w-36 md:h-36" />
-            <div className="flex flex-col font-Raleway pr-10 w-60 md:w-1/3">
+            <img src={data.imageURL} className="w-24 h-24 md:w-36 md:h-36" />
+            <div className="flex flex-col font-Raleway pr-24 w-80 md:w-1/2">
               <h2 className="text-lg font-bold md:text-2xl">{data.company}</h2>
               {data.position.map((position) => (
                 <div
@@ -21,8 +21,8 @@ const ExperienceCard = () => {
 													md:text-lg"
                 >
                   <p>{position.title}</p>
-                  <p className="italic text-dark">{position.duration}</p>
-                  <p className="italic text-dark">{position.location}</p>
+                  <p className="text-dark">{position.duration}</p>
+                  <p className="text-dark">{position.location}</p>
                 </div>
               ))}
             </div>
