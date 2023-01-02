@@ -12,7 +12,7 @@ const ExperienceCard = () => {
 														justify-center"
           >
             <img src={data.imageURL} className="w-24 h-24 md:w-36 md:h-36" />
-            <div className="flex flex-col font-Raleway pr-24 w-48 md:w-1/2">
+            <div className="flex flex-col font-Raleway pr-24 w-64 md:w-1/2">
               <h2 className="text-lg font-bold md:text-2xl w-36 md:w-64">{data.company}</h2>
               {data.position.map((position) => (
                 <div
