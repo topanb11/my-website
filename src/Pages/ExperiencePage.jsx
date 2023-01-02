@@ -6,7 +6,7 @@ const ExperiencePage = () => {
   return (
     <>
       <Navbar />
-      <div className="flex-col text-center">
+      <div className="text-center">
         <h1 className="font-Raleway text-3xl md:text-5xl font-bold mt-10 ">
           Experience
         </h1>

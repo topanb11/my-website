@@ -31,7 +31,7 @@ const data = {
           location: "Calgary, AB",
         },
         {
-          title: "Director of Events",
+          title: "Events Commissioner",
           duration: "May. 2021 - Mar. 2022",
           location: "Calgary, AB",
         },

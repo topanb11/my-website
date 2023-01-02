@@ -4,10 +4,12 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
+const ICONS = { color: "#5539CC", fontSize: "60px" };
+
 const HomePage = () => {
   return (
     <>
-      <div className="from-secondary to h-screen">
+      <div className="from-secondary h-screen">
         <Navbar />
         <div
           className="flex flex-col text-center
@@ -30,24 +32,26 @@ const HomePage = () => {
               className="text-secondary font-semibold
 									text-2xl underline underline-offset-2"
             >
-              Software Engineering Student @ University of Calgary
+              3rd year Software Engineering @ UCalgary
             </h3>
-            <p>
+            <p className="mt-1">
               Always looking to learn new things, connect with people and create
               cool stuff!
             </p>
-            <div className="flex justify-center justify-evenly mt-5">
-              <a href="https://github.com/topanb11" target="_blank">
-                <GitHubIcon sx={{ color: "#5539CC", fontSize: "60px" }} />
+            <div className="flex justify-center justify-around md:justify-evenly mt-5 mb-5">
+              <a href="https://github.com/topanb11" 
+								target="_blank"
+							>
+                <GitHubIcon sx={ICONS} />
               </a>
               <a
                 href="https://www.linkedin.com/in/topan-budiman-b84977205/"
                 target="_blank"
               >
-                <LinkedInIcon sx={{ color: "#5539CC", fontSize: "60px" }} />
+                <LinkedInIcon sx={ICONS} />
               </a>
               <a href="mailto:topanbudiman11@gmail.com" target="_blank">
-                <EmailIcon sx={{ color: "#5539CC", fontSize: "60px" }} />
+                <EmailIcon sx={ICONS} />
               </a>
             </div>
           </div>
