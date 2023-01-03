@@ -1,11 +1,33 @@
-import React from "react";
-import data from "../data";
+import React, {useEffect, useState} from "react";
+import client from "../secrets";
 
 const ExperienceCard = () => {
+	const [data, setData] = useState([]);
+	const [loaded, setLoaded] = useState(false);
+
+	const getExperienceData = async() => {
+		let response = await client.getEntries({
+			content_type: 'topan'
+		})
+		setData(response.items);
+	}
+
+	useEffect(() => {
+		getExperienceData();
+	}, [])
+
+	useEffect(() => {
+		if (data) setLoaded(true)
+		if (loaded) {
+			console.log(data);
+		}
+	}, [data])
+
+	
   return (
     <>
       <ul>
-        {data.ExperienceData.map((data) => (
+        {/* {data.ExperienceData.map((data) => (
           <li
             key={data.order}
             className="flex flex-row-reverse text-left my-10 
@@ -27,7 +49,7 @@ const ExperienceCard = () => {
               ))}
             </div>
           </li>
-        ))}
+        ))} */}
       </ul>
     </>
   );
