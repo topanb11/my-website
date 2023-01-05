@@ -62,24 +62,19 @@ const ExperiencePage = () => {
 	const LoadingPage = () => {
 		return (
 			<>
-				<div className="from-secondary h-screen">
-					<div className={` ${BORDER_PLACEHOLDER} h-20 border-b-4`}></div>
-					<div className="flex flex-col md:justify-center mt-10 md:mt-16">
-						<div className={`${BORDER_PLACEHOLDER} mx-auto h-10 w-48`}></div>
-
-						<div className="flex mt-10 mx-auto space-x-12">
-							<div>
-									<div className={`${BORDER_PLACEHOLDER} w-16 h-6`}></div>
-								<div className="flex flex-col justify-around border-l-4 border-grey pl-5 h-14 mt-5">
-									<div className={`${BORDER_PLACEHOLDER} w-48 h-3`}></div>
-									<div className={`${BORDER_PLACEHOLDER} w-36 h-3`}></div>
-									<div className={`${BORDER_PLACEHOLDER} w-24 h-3`}></div>
-								</div>
+				<div className={` ${BORDER_PLACEHOLDER} h-20 md:h-24 border-b-4`}></div>
+				<div className={`${BORDER_PLACEHOLDER} mx-auto my-6 h-10 w-48 md:w-64 md:h-16`}></div>
+					<div className="flex flex-row justify-center mt-10 space-x-12 md:space-x-[60rem]">
+						<div className="flex flex-col">
+							<div className={`${BORDER_PLACEHOLDER} w-16 h-6 md:w-28 md:h-18`}></div>
+							<div className="flex flex-col justify-around border-l-4 border-grey pl-5 h-14 mt-5 md:h-24">
+								<div className={`${BORDER_PLACEHOLDER} w-48 h-3 md:h-4 md:w-64`}></div>
+								<div className={`${BORDER_PLACEHOLDER} w-36 h-3 md:h-4 md:w-48`}></div>
+								<div className={`${BORDER_PLACEHOLDER} w-24 h-3 md:h-4 md:w-36`}></div>
 							</div>
-							<div className={` ${BORDER_PLACEHOLDER} w-20 h-20`}></div>
 						</div>
+						<div className={` ${BORDER_PLACEHOLDER} w-20 h-20 md:w-36 md:h-36`}></div>
 					</div>
-				</div>
 			</>
 		);
 	};

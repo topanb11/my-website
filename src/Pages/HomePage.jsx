@@ -26,7 +26,7 @@ const HomePage = () => {
 		return (
 			<>
 				<div className="from-secondary h-screen">
-					<div className={` ${BORDER_PLACEHOLDER} h-20 border-b-4`}></div>
+					<div className={` ${BORDER_PLACEHOLDER} h-20 md:h-24 border-b-4`}></div>
 					<div className="flex flex-col md:flex-row-reverse md:justify-center mt-10 md:mt-16">
 						<div className={` ${BORDER_PLACEHOLDER} rounded-[3em] h-96 md:w-96 mx-6`}></div>
 						<div className="mt-5 mx-6">
