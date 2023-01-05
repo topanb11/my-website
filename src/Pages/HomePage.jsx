@@ -26,21 +26,21 @@ const HomePage = () => {
 		return (
 			<>
 				<div className="from-secondary h-screen">
-				<div className={` ${BORDER_PLACEHOLDER} h-14 border-b-4`}></div>
-				<div className="flex flex-col md:flex-row-reverse md:justify-center mt-10 md:mt-16">
-					<div className={` ${BORDER_PLACEHOLDER} rounded-[3em] h-96 md:w-96 mx-6`}></div>
-					<div className="mt-5 mx-6">
-						<div className={` ${BORDER_PLACEHOLDER} rounded-lg h-10 md:w-[40rem]`}></div>
-						<div className={` ${BORDER_PLACEHOLDER} rounded-lg h-10 w-64 md:w-[32rem] mt-2`}></div>
-						<div className={` ${BORDER_PLACEHOLDER} rounded-lg h-10 w-80 md:w-[45rem] mt-2`}></div>
-						<div className="flex justify-center justify-around md:justify-evenly mt-10 mb-5">
-							<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
-							<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
-							<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
+					<div className={` ${BORDER_PLACEHOLDER} h-20 border-b-4`}></div>
+					<div className="flex flex-col md:flex-row-reverse md:justify-center mt-10 md:mt-16">
+						<div className={` ${BORDER_PLACEHOLDER} rounded-[3em] h-96 md:w-96 mx-6`}></div>
+						<div className="mt-5 mx-6">
+							<div className={` ${BORDER_PLACEHOLDER} mt-5 rounded-lg h-20 md:w-[40rem]`}></div>
+							<div className={` ${BORDER_PLACEHOLDER} rounded-lg h-16 w-64 md:w-[32rem] mt-2`}></div>
+							<div className={` ${BORDER_PLACEHOLDER} rounded-lg h-10 w-80 md:w-[45rem] mt-2`}></div>
+							<div className="flex justify-center justify-around md:justify-evenly mt-10 mb-5">
+								<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
+								<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
+								<div className={` ${BORDER_PLACEHOLDER} rounded-full w-16 h-16 md:w-24 md:h-24`} ></div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 			</>
 		);
 	}
