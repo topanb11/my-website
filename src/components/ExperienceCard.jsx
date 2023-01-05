@@ -1,11 +1,62 @@
-import React from "react";
-import data from "../data";
+import React, {useEffect, useState} from "react";
+import client from "../secrets";
 
 const ExperienceCard = () => {
+	const [data, setData] = useState([]);
+	const [experienceData, setExperienceData] = useState([]);
+
+	const sortExperienceData = (data) => {
+		var sorted = [];
+		var companies = {};
+
+		data.forEach(item => {
+			const companyName = item.fields.company;
+			if (companyName in companies) {
+				companies[companyName].position.unshift({
+					title: item.fields.experience,
+					duration: item.fields.date,
+					location: item.fields.location 
+				})
+			} else {
+				companies[companyName] = ({
+					company: item.fields.company,
+					imageURL: item.fields.headshot.fields.file.url,
+					order: item.fields.order,
+					position: [{
+						title: item.fields.experience,
+						duration: item.fields.date,
+						location: item.fields.location
+					}]
+				});
+			}
+		});
+		for (const company in companies) {
+			sorted.push(companies[company]);
+		};
+		sorted.sort((a,b) => a.order > b.order);
+		return sorted;
+	}
+
+	const getExperienceData = async() => {
+		let response = await client.getEntries({
+			content_type: 'topan'
+		})
+		setData(response.items);
+	}
+
+	useEffect(() => {
+		getExperienceData();
+	}, [])
+
+	useEffect(() => {
+		var sortedData = sortExperienceData(data);
+		setExperienceData(sortedData);
+	}, [data])
+	
   return (
     <>
       <ul>
-        {data.ExperienceData.map((data) => (
+        {experienceData.map((data) => (
           <li
             key={data.order}
             className="flex flex-row-reverse text-left my-10 

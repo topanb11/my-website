@@ -2,15 +2,23 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import client from "../secrets";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+	const [resumeUrl, setResumeUrl] = useState("");
+
+	const getResume = async() => {
+		let response = await client.getEntry('46Qc3NETw9OPsZX3rEmqD9')
+		setResumeUrl (response.fields.assets.fields.file.url);
+	}
+
   const Links = [
     { name: "HOME", link: "/" },
     { name: "EXPERIENCE", link: "/experience" },
     { name: "BLOG", link: "/blog" },
-    { name: "RESUME", link: require("../assets/resume.pdf"), target: "_blank" },
+    { name: "RESUME", link: resumeUrl, target: "_blank" },
   ];
 
   const NAVBAR_CONTAINER =
@@ -21,6 +29,10 @@ function Navbar() {
   const DROPDOWN_ITEM =
     "flex text-xl border-l-[0.5px] border-primary md:border-none ml-5 mt-5 px-3 w-96 md:w-auto";
   const DROPDOWN_ICON = { fontSize: "40px" };
+
+	useEffect(() => {
+		getResume();
+	}, [])
 
   return (
     <>
