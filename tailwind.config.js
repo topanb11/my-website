@@ -10,7 +10,8 @@ module.exports = {
     "secondary": "#8773DB",
     "light": "#C4BAED",
     "dark": "#1F144D",
-	"black": "#000"
+		"black": "#000",
+		"grey": "#E5E5E5"
   },
   fontFamily: {
     'Raleway': "Raleway"
