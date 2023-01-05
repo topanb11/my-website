@@ -23,7 +23,7 @@ const ExperienceCard = ( {data} ) => {
                 </div>
               ))}
             </div>
-						<img src={data.imageURL} className="w-24 h-24 md:w-36 md:h-36" />
+						<img src={data.imageURL} className="rounded-xl w-24 h-24 md:w-36 md:h-36" />
           </li>
         ))}
       </ul>
