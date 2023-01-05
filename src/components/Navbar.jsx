@@ -11,7 +11,7 @@ function Navbar() {
 
 	const getResume = async() => {
 		let response = await client.getEntry('46Qc3NETw9OPsZX3rEmqD9')
-		setResumeUrl(response.fields.assets.fields.file.url);
+		setResumeUrl (response.fields.assets.fields.file.url);
 	}
 
   const Links = [

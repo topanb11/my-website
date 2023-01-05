@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import client from "../secrets.js";
 
 const ICONS = { color: "#5539CC", fontSize: "60px" };
 
 const HomePage = () => {
+	const [headshotUrl, setHeadshotUrl] = useState("");
+
+	const getHeadshotUrl = async() => {
+		var response = await client.getEntry("5OthejOTaaTviOM4FFLXFa");
+		setHeadshotUrl(response.fields.imageUrl.fields.file.url);
+	}
+
+	useEffect(() => {
+		getHeadshotUrl();
+	}, [])
+
   return (
     <>
       <div className="from-secondary h-screen">
@@ -17,7 +29,7 @@ const HomePage = () => {
         >
           <div className="mx-6 z-[-10]">
             <img
-              src="../assets/headshot.jpeg"
+              src={headshotUrl}
               className="rounded-[3em] shadow-lg md:w-96"
             />
           </div>
