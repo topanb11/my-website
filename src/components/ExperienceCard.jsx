@@ -33,7 +33,7 @@ const ExperienceCard = () => {
 		for (const company in companies) {
 			sorted.push(companies[company]);
 		};
-		sorted.sort((a,b) => a.order > b.order)
+		sorted.sort((a,b) => a.order > b.order);
 		return sorted;
 	}
 
